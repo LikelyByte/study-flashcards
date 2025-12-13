@@ -1,5 +1,6 @@
 import { Outlet, NavLink } from "react-router-dom";
 import ROUTES from "./routes";
+import '../css/Navbar.css'
 
 
 export default function AppLayout() {

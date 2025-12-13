@@ -7,10 +7,10 @@ import Quiz from "../features/quizzes/Quiz";
 import Quizzes from "../features/quizzes/Quizzes";
 import NewQuizForm from "../components/NewQuizForm";
 import NewTopicForm from "../components/NewTopicForm";
-
+import '../css/App.css'
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter className="App">
       <Routes>
         <Route path="/" element={<AppLayout />}>
           <Route path="topics" element={<Topics />} />
