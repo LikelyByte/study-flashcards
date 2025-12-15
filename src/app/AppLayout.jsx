@@ -14,6 +14,11 @@ export default function AppLayout() {
                     </NavLink>
                 </li>
                 <li>
+                    <NavLink to={ROUTES.newTopicRoute()}>
+                    New Topic
+                    </NavLink>
+                </li>
+                <li>
                     <NavLink to={ROUTES.quizzesRoute()} >
                     Quizzes
                     </NavLink>
