@@ -1,0 +1,68 @@
+/* Quiz.css - Basic styling for Quizzes component */
+
+.center {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.quizzes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.quizzes-list a {
+  text-decoration: none;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.quiz {
+  background: white;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  padding: 20px;
+  color: #007bff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.quiz:hover {
+  background: #007bff;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+.button {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: #218838;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
+}
