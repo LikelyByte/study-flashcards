@@ -6,6 +6,7 @@ const initialState = {
             id: '123',
             front: 'what is 1 + 1?',
             back: '2',
+            quizId: 'quiz-123'
         }
     }
 }

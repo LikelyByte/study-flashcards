@@ -6,7 +6,7 @@ const initialState = {
             id: 'quiz-123',
             name: 'Math Basics',
             topicId: 'topic-234',
-            cardIds: ['card-1', 'card-2']
+            cardIds: ['card-1', '123']
         }
     }
 }
