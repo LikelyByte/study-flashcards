@@ -7,7 +7,7 @@ import ROUTES from "../app/routes";
 import { selectTopics } from "../features/topics/topicsSlice";
 import { addQuiz } from "../features/quizzes/quizzesSlice";
 import { addCard } from "../features/cards/cardsSlice";
-import {addQuizToTopic} from "../features/topics/topicsSlice"
+import {addQuizIdToTopic} from "../features/topics/topicsSlice"
 import "../css/NewQuizForm.css"; // Import CSS
 
 export default function NewQuizForm() {
@@ -60,7 +60,7 @@ export default function NewQuizForm() {
     );
     // Add the quiz Id to the topic's quizId array
     dispatch(
-      addQuizToTopic({
+      addQuizIdToTopic({
         topicId: topicId,
         quizId: quizId
       })

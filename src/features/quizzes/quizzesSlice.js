@@ -16,12 +16,12 @@ export const quizzesSlice = createSlice({
     initialState: initialState,
     reducers: {
         addQuiz: (state, action ) => {
-            const {id, name, topicId, cardsIds = []} = action.payload;
+            const {id, name, topicId, cardIds = []} = action.payload;
             state.quizzes[id] = {
                 id: id,
                 name: name, 
                 topicId: topicId,
-                cardIds: cardsIds,
+                cardIds: cardIds,
             }
         }
     }

@@ -13,6 +13,14 @@ const Quiz = () => {
   const { quizId } = useParams();
   const quiz = quizzes[quizId];  // Fixed syntax: should be quizzes[quizId] not quizzes{quizId}
 
+  console.log("=== QUIZ DEBUG ===");
+  console.log("quizId from URL:", quizId);
+  console.log("All quizzes:", quizzes);
+  console.log("Current quiz:", quiz);
+  console.log("Quiz cardIds:", quiz?.cardIds);
+  console.log("Quiz cardIds length:", quiz?.cardIds?.length);
+  console.log("Quiz cardIds type:", typeof quiz?.cardIds);
+  console.log("=== END DEBUG ===");
   //Return if quiz is Undefined 
   if (!quiz) {
     return <Navigate to={ROUTES.quizzesRoute()} replace />

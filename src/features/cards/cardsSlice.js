@@ -28,8 +28,6 @@ const cardsSlice = createSlice({
     }
 })
 
-// Selector to access all cards
-export const selectCards = (state) => state.cards.cards;
 // Selector to get specific card by ID
 export const selectCardById = (id) => (state) => state.cards.cards[id];
 

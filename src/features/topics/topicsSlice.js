@@ -24,8 +24,8 @@ export const topicsSlice = createSlice({
                 icon: icon,
                 quizIds: [], // FIX 4: Changed from quizId to quizIds (plural)
             }
-        }
-        addQuiztoTopic: (state, action ) => {
+        },
+        addQuizIdToTopic: (state, action ) => {
             const {topicId, quizId} = action.payload;
             const topic = state.topics[topicId];
             if (topic && !topic.quizIds.includes(quizId)) {
